@@ -4,9 +4,9 @@ from gensim.models import Word2Vec
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
 import seaborn as sns
+from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
 
 
@@ -76,7 +76,7 @@ else:
 df = pd.read_excel('personalitytraits_keywords_traithead.xlsx')
 
 # Step 2: Retrieve the words under the specified column
-trait_words = df["inte"].tolist()
+trait_words = df[trait].tolist()
 
 # Step 3: Create a DataFrame with the extracted words
 trait_df = pd.DataFrame({'Trait Words': trait_words})
@@ -119,24 +119,18 @@ df.to_excel('kopplade_traits_keywords_word2vec.xlsx', index=False)
 
 
 # Step 1: Load the Excel file into a DataFrame
-df = pd.read_excel('bara10_processed.xlsx')
+df = pd.read_excel('HelpdeskMjukvaru_processed.xlsx')
 
 # Step 2: Prepare the data for classification
 X = df.iloc[:, 35:135] 
 y = df['occupation'] 
 
 # Step 3: Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
 
-# Step 4: Train a classification model
-model = LogisticRegression()
+# Step 4: Train a Random Forest classifier
+model = RandomForestClassifier()
 model.fit(X_train, y_train)
-
-# Step 5: Make predictions on the test set
-y_pred = model.predict(X_test)
-
-# Step 7: Compute the confusion matrix
-confusion_mat = confusion_matrix(y_test, y_pred)
 
 # Step 5: Make predictions on the training set
 y_train_pred = model.predict(X_train)
@@ -152,7 +146,10 @@ y_test_pred = model.predict(X_test)
 test_accuracy = accuracy_score(y_test, y_test_pred)
 print(f"Test Accuracy: {test_accuracy}")
 
-# Step 8: Visualize the confusion matrix
+# Step 9: Compute the confusion matrix
+confusion_mat = confusion_matrix(y_test, y_test_pred)
+
+# Step 10: Visualize the confusion matrix
 plt.figure(figsize=(8, 6))
 sns.heatmap(confusion_mat, annot=True, fmt='d', cmap='Blues')
 plt.title("Confusion Matrix")
@@ -160,18 +157,16 @@ plt.xlabel("Predicted Labels")
 plt.ylabel("True Labels")
 plt.show()
 
-# Step 1: Load the Excel file into a DataFrame
+# Step 11: Load the input data from an Excel file
 input_data = pd.read_excel('kopplade_traits_keywords_word2vec.xlsx', usecols="B:CW", skiprows=0)
 
-# Step 3: Use the trained model to predict the class label for the input data
+# Step 12: Use the trained model to predict the class labels for the input data
 input_pred = model.predict(input_data)
 
-# Step 4: Add the predicted labels to the input data DataFrame
+# Step 13: Add the predicted labels to the input data DataFrame
 input_data['Predicted Label'] = input_pred
 
-# Step 5: Save the results to an Excel file
+# Step 14: Save the results to an Excel file
 input_data.to_excel('kopplade_traits_keywords_word2vec_classified.xlsx', index=False)
-
-
 
 
