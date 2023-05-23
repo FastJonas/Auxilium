@@ -64,6 +64,6 @@ class Quiz:
             self.answer_scale.set(1)
 
 root = tk.Tk()
-root.geometry('800x600')  # Set the size of the window
+root.geometry('800x500')  # Set the size of the window
 quiz = Quiz(root)
 root.mainloop()
