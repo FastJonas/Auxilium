@@ -1,0 +1,27 @@
+Occupation,Count
+"{'concept_id': 'GDHs_eoz_uKx', 'label': 'Frontend-utvecklare', 'legacy_ams_taxonomy_id': '7633'}",74
+"{'concept_id': '7wdX_4rv_33z', 'label': 'Backend-utvecklare', 'legacy_ams_taxonomy_id': '7632'}",315
+"{'concept_id': 'fg7B_yov_smw', 'label': 'Systemutvecklare/Programmerare', 'legacy_ams_taxonomy_id': '2419'}",304
+"{'concept_id': 'rQds_YGd_quU', 'label': 'Mjukvaruutvecklare', 'legacy_ams_taxonomy_id': '80'}",152
+"{'concept_id': 'CZkP_hCz_KM8', 'label': 'Applikationsutvecklare/Apputvecklare', 'legacy_ams_taxonomy_id': '7576'}",161
+"{'concept_id': '6CfM_iwp_hDJ', 'label': 'Verksamhetskonsult, IT', 'legacy_ams_taxonomy_id': '7578'}",199
+"{'concept_id': 'tdCZ_6Pn_VzT', 'label': 'IT-tekniker/Datatekniker', 'legacy_ams_taxonomy_id': '6625'}",144
+"{'concept_id': 'ZtTD_4VC_f4i', 'label': 'Systemtestare', 'legacy_ams_taxonomy_id': '5422'}",259
+"{'concept_id': '7YaM_bPu_c1T', 'label': 'Systemanalytiker/Systemutredare', 'legacy_ams_taxonomy_id': '2411'}",140
+"{'concept_id': 'Nkbd_wa9_TZF', 'label': 'Nätverkstekniker', 'legacy_ams_taxonomy_id': '5912'}",46
+"{'concept_id': 'bbSi_hWq_H98', 'label': 'Testledare', 'legacy_ams_taxonomy_id': '6826'}",186
+"{'concept_id': 'TT8h_qKk_1iu', 'label': 'Affärskonsult, IT', 'legacy_ams_taxonomy_id': '7579'}",132
+"{'concept_id': 'FHwx_yXu_FAd', 'label': 'Säkerhetsanalytiker, IT', 'legacy_ams_taxonomy_id': '2719'}",82
+"{'concept_id': 'uyJg_i94_xmr', 'label': 'IT-arkitekt/Lösningsarkitekt', 'legacy_ams_taxonomy_id': '6626'}",109
+"{'concept_id': 'Gjz2_EJT_HGL', 'label': 'Kravanalytiker', 'legacy_ams_taxonomy_id': '7621'}",213
+"{'concept_id': 'AQ8y_9XL_Jvv', 'label': 'IT-samordnare', 'legacy_ams_taxonomy_id': '2915'}",103
+"{'concept_id': 'KQty_E1u_cia', 'label': 'Helpdesktekniker/Supporttekniker', 'legacy_ams_taxonomy_id': '7020'}",92
+"{'concept_id': 'Lxas_8K9_W1o', 'label': 'Systemadministratör', 'legacy_ams_taxonomy_id': '2918'}",51
+"{'concept_id': 'Cb5F_v1d_4qK', 'label': 'Drifttekniker, data', 'legacy_ams_taxonomy_id': '5431'}",27
+"{'concept_id': 'CQse_CRd_snw', 'label': 'Civilingenjör, systemutveckling', 'legacy_ams_taxonomy_id': '6509'}",57
+"{'concept_id': 'urWs_F5u_msS', 'label': 'Applikationskonsult', 'legacy_ams_taxonomy_id': '7577'}",29
+"{'concept_id': 'fZoS_si8_SFg', 'label': 'Säkerhetsansvarig, IT', 'legacy_ams_taxonomy_id': '2720'}",29
+"{'concept_id': 'wNG8_Rsg_RQc', 'label': 'Systemansvarig', 'legacy_ams_taxonomy_id': '5996'}",107
+"{'concept_id': 'mBMU_HvW_LMY', 'label': 'IT-strateg', 'legacy_ams_taxonomy_id': '5432'}",49
+"{'concept_id': 'nFJR_WkF_ir7', 'label': 'Systemförvaltare', 'legacy_ams_taxonomy_id': '2919'}",22
+"{'concept_id': 'z5AM_ayf_WcL', 'label': 'Projektledare, IT', 'legacy_ams_taxonomy_id': '5388'}",43
