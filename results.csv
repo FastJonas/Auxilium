@@ -1,0 +1,27 @@
+Value,Öppenhet för erfarenhet,Samvetsgrannhet,Extraversion,Medmänsklighet,Emotionell stabilitet
+"{'concept_id': 'fg7B_yov_smw', 'label': 'Systemutvecklare/Programmerare', 'legacy_ams_taxonomy_id': '2419'}",71.46552859334658,42.27525291741483,67.98336798847038,68.90450538631106,58.770119177934774
+"{'concept_id': 'KQty_E1u_cia', 'label': 'Helpdesktekniker/Supporttekniker', 'legacy_ams_taxonomy_id': '7020'}",57.33816426868932,87.63292661947823,86.77692890301078,67.25914830339292,78.35903855431609
+"{'concept_id': 'CZkP_hCz_KM8', 'label': 'Applikationsutvecklare/Apputvecklare', 'legacy_ams_taxonomy_id': '7576'}",106.86541846276427,79.60267145155252,57.748244236771,55.27681620310943,84.22787881399667
+"{'concept_id': 'Lxas_8K9_W1o', 'label': 'Systemadministratör', 'legacy_ams_taxonomy_id': '2918'}",74.86214140405548,92.87247302660887,74.53953206975646,67.26017000952416,84.5564900535473
+"{'concept_id': 'CQse_CRd_snw', 'label': 'Civilingenjör, systemutveckling', 'legacy_ams_taxonomy_id': '6509'}",86.58077804380997,61.02745800766225,87.96280679203662,81.01531936285781,70.76638083345854
+"{'concept_id': 'Nkbd_wa9_TZF', 'label': 'Nätverkstekniker', 'legacy_ams_taxonomy_id': '5912'}",77.94978414660436,92.50431698452205,76.99725514796145,81.24079941854978,82.36800706285831
+"{'concept_id': 'tdCZ_6Pn_VzT', 'label': 'IT-tekniker/Datatekniker', 'legacy_ams_taxonomy_id': '6625'}",70.1657387745111,92.8068455351319,70.88176405496101,67.19452065925086,84.52556071499758
+"{'concept_id': 'ZtTD_4VC_f4i', 'label': 'Systemtestare', 'legacy_ams_taxonomy_id': '5422'}",93.35180738904049,98.05288772933216,76.57029639861818,77.45636648414397,68.79575682075301
+"{'concept_id': 'wNG8_Rsg_RQc', 'label': 'Systemansvarig', 'legacy_ams_taxonomy_id': '5996'}",78.70487245426088,88.93688827858959,104.22955955966204,81.08486793938383,62.352637544207965
+"{'concept_id': '6CfM_iwp_hDJ', 'label': 'Verksamhetskonsult, IT', 'legacy_ams_taxonomy_id': '7578'}",70.92186369895546,57.67098462409592,70.45460679450028,80.92220658310482,87.21483911038231
+"{'concept_id': 'rQds_YGd_quU', 'label': 'Mjukvaruutvecklare', 'legacy_ams_taxonomy_id': '80'}",82.29853321390792,54.82932958723963,73.28843872324151,69.73988227932692,81.41486328226894
+"{'concept_id': 'mBMU_HvW_LMY', 'label': 'IT-strateg', 'legacy_ams_taxonomy_id': '5432'}",88.38589667900388,71.34771585784407,100.93038241928815,85.32506569316585,86.44430064760033
+"{'concept_id': 'GDHs_eoz_uKx', 'label': 'Frontend-utvecklare', 'legacy_ams_taxonomy_id': '7633'}",62.100407357597035,33.63876907348037,33.37497233183569,52.24448554113534,42.45708550953382
+"{'concept_id': 'z5AM_ayf_WcL', 'label': 'Projektledare, IT', 'legacy_ams_taxonomy_id': '5388'}",76.45407668739509,75.47477988248329,96.58915827763413,99.25574648845374,83.1114632302381
+"{'concept_id': 'nFJR_WkF_ir7', 'label': 'Systemförvaltare', 'legacy_ams_taxonomy_id': '2919'}",72.84933746525871,103.78296892724333,98.42142079811711,93.20554238603383,96.85567772482406
+"{'concept_id': '7YaM_bPu_c1T', 'label': 'Systemanalytiker/Systemutredare', 'legacy_ams_taxonomy_id': '2411'}",98.93638299636204,73.80857596361373,66.85145062091243,79.69919792616221,85.53839027157805
+"{'concept_id': '7wdX_4rv_33z', 'label': 'Backend-utvecklare', 'legacy_ams_taxonomy_id': '7632'}",94.37517416666364,47.024027499473505,73.71155400744706,69.16138715574203,56.830198314971724
+"{'concept_id': 'uyJg_i94_xmr', 'label': 'IT-arkitekt/Lösningsarkitekt', 'legacy_ams_taxonomy_id': '6626'}",95.76894662935895,60.22242597660521,81.04846206071784,85.59380725185467,81.08724425494204
+"{'concept_id': 'AQ8y_9XL_Jvv', 'label': 'IT-samordnare', 'legacy_ams_taxonomy_id': '2915'}",72.56370923331158,93.88139778921989,84.15813765833889,101.56510412552716,87.27372812541472
+"{'concept_id': 'Cb5F_v1d_4qK', 'label': 'Drifttekniker, data', 'legacy_ams_taxonomy_id': '5431'}",83.21777183662503,90.03290477914969,80.24289068890633,79.43321267383077,86.57088052041564
+"{'concept_id': 'bbSi_hWq_H98', 'label': 'Testledare', 'legacy_ams_taxonomy_id': '6826'}",60.33741759922768,84.59185607008305,94.32545678024916,86.98713684700205,61.59596924344579
+"{'concept_id': 'fZoS_si8_SFg', 'label': 'Säkerhetsansvarig, IT', 'legacy_ams_taxonomy_id': '2720'}",67.8133947614641,85.84727556399949,90.01101767325794,88.77753643918632,83.6613785854278
+"{'concept_id': 'TT8h_qKk_1iu', 'label': 'Affärskonsult, IT', 'legacy_ams_taxonomy_id': '7579'}",79.38097984259883,55.99651913487134,77.85937896662219,91.21080341868353,88.93748352001506
+"{'concept_id': 'urWs_F5u_msS', 'label': 'Applikationskonsult', 'legacy_ams_taxonomy_id': '7577'}",77.67955373636035,66.76994726492795,88.66786362499559,83.84282082997716,76.67938769956537
+"{'concept_id': 'FHwx_yXu_FAd', 'label': 'Säkerhetsanalytiker, IT', 'legacy_ams_taxonomy_id': '2719'}",104.87247611715625,87.227531764057,79.56526332704009,83.68801760404364,88.71552689690786
+"{'concept_id': 'Gjz2_EJT_HGL', 'label': 'Kravanalytiker', 'legacy_ams_taxonomy_id': '7621'}",87.14307660863054,68.34168700415115,88.54030630170553,108.00354258764293,69.01996415680621

@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 
 # Read the CSV file into a pandas DataFrame
-df = pd.read_csv('Testar69utanklon.csv')
+df = pd.read_csv('scaled_resultat.csv')
 
 ext = 0
 agr = 0
@@ -73,11 +73,11 @@ emo = (quiz.answers[3] + quiz.answers[8]) / 2
 int = (quiz.answers[4] + quiz.answers[9]) / 2
 
 # Features and target
-X = df[['ext', 'agr', 'con', 'emo', 'int']]
-y = df['occupation']
+X = df[['Extraversion', 'Medmänsklighet', 'Samvetsgrannhet', 'Emotionell stabilitet', 'Öppenhet för erfarenhet']]
+y = df['Value']
 
 # Create and fit KNN classifier
-k = 10  # Number of nearest neighbors
+k = 1  # Number of nearest neighbors
 knn = KNeighborsClassifier(n_neighbors=k)
 knn.fit(X, y)
 
