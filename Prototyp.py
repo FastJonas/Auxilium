@@ -4,9 +4,6 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 import csv
 
-
-
-# Read the CSV file into a pandas DataFrame
 df = pd.read_csv('scaled_resultat.csv')
 
 ext = 0
@@ -14,8 +11,6 @@ agr = 0
 con = 0
 int = 0
 ord = 0
-
-# Initialize a variable to store the maximum value
 trait = None
 
 
@@ -50,16 +45,14 @@ class Quiz:
                                       background='#f9f9f9', foreground='#333333')
         instructions_label2.pack(pady=0)
 
-        # Create a button to start the quiz
         start_button = ttk.Button(entry_frame, text='Start', command=self.start_quiz)
         start_button.pack(pady=0)
 
-        # Create the Auxillium label in the top right corner of the entry frame
         aux_label = tk.Label(entry_frame, text="Auxillium", font=('Arial', 18, 'bold'), bg='#f9f9f9', fg='#555555')
         aux_label.place(relx=0.625, rely=0.85, anchor=tk.NE)
 
     def start_quiz(self):
-        # Create a new frame to hold the quiz content
+        # Create a new frame
         content_frame = tk.Frame(self.master, bg='#f9f9f9')
         content_frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER, relwidth=0.6, relheight=0.6)
 
@@ -85,10 +78,8 @@ class Quiz:
         next_button.pack(pady=30)
 
     def next_question(self):
-        # Record the answer to the current question
         self.answers.append(self.answer_scale.get())
 
-        # Move on to the next question
         self.current_question += 1
 
         # If there are no more questions, close the window
@@ -103,7 +94,6 @@ class Quiz:
     def show_results(self,answers):
         self.answers = answers
 
-         #the trait with the highest score
         ext = (quiz.answers[0] + quiz.answers[5]) / 2
         agr = (quiz.answers[1] + quiz.answers[6]) / 2
         con = (quiz.answers[2] + quiz.answers[7]) / 2
@@ -132,7 +122,6 @@ class Quiz:
         # Get the top three job titles with the highest occurrence count
         top_three_job_titles = job_title_counts.index[:3]
 
-        # Save the best fit as "trait", the second best fit as "trait2", and the third best fit as "trait3"
         trait = top_three_job_titles[0]
         trait2 = top_three_job_titles[1]
         trait3 = top_three_job_titles[2]
@@ -146,7 +135,6 @@ class Quiz:
                                 background='#f9f9f9', foreground='#333333', anchor='center', justify='center')
         results_label.pack(pady=40)
 
-        # Create a button to close the results window
         close_button = ttk.Button(self.master, text='Nästa', command=lambda: self.submit(trait, trait2, trait3))
         close_button.pack(pady=10)
 
@@ -154,7 +142,6 @@ class Quiz:
         aux_label.place(relx=0.6, rely=0.85, anchor=tk.NE)
     
 
-    # Create a function to handle the button click event
     def submit(self, trait, trait2, trait3):
         self.trait = trait
         self.trait2 = trait2
@@ -189,17 +176,12 @@ class Quiz:
         checkbox4_state = self.checkbox4_var.get()
         checkbox5_state = self.checkbox5_var.get()
 
-        # Open the CSV file using the built-in 'open' function
         with open('jobs.csv', newline='') as csvfile:
-            # Use the 'reader' function from the csv module to parse the CSV file
             reader = csv.reader(csvfile)
 
-            # Create an empty list to store the matching rows
             matching_rows = []
 
-            # Loop through each row of the CSV file and check for matches
             for row in reader:
-                # Check if the value in the third column matches the selected option
                 if row[2] == self.trait:
                     # Check if any of the checkbox values are in the fifth column
                     if (checkbox1_state and 'Python' in row[4]) or \
@@ -210,19 +192,16 @@ class Quiz:
                         # Add the first and fourth columns to the list of matching rows
                         matching_rows.append((row[0], row[3]))
 
-            # Clean up the UI after displaying the results
             for widget in self.master.winfo_children():
                 widget.destroy()
 
-            # Create a label to display the matching rows or "No matching rows found" message
             results_label = ttk.Label(self.master, font=('Arial', 10), background='#f9f9f9', foreground='#333333')
             results_label.pack(pady=40)
 
-            # Update the label with the matching rows or "No matching rows found" message
             if len(matching_rows) > 0:
                 results_text = " Matchande jobbannonser:\n"
                 for row in matching_rows:
-                    results_text += f"{row[0]} Arbetsformedlingen.se{row[1]}\n"
+                    results_text += f"{row[0]}, Arbetsformedlingen.se{row[1]}\n"
             else:
                 results_text = "Inga matchande jobbannonser hittades."
 
@@ -231,7 +210,7 @@ class Quiz:
 
 
 root = tk.Tk()
-root.geometry('800x500')  # Set the size of the window
+root.geometry('800x500')
 quiz = Quiz(root)
 root.mainloop()
 
