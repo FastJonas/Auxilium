@@ -35,7 +35,7 @@ def is_similar(word1, word2):
     similarity_ratio = fuzz.ratio(word1, word2)
     return similarity_ratio >= 70
 
-data = pd.read_excel('250PerTitleWithoutStopwords.xlsx')
+data = pd.read_excel('Final250PerTitleWithoutStopwords.xlsx')
 
 combined_scores = {}
 
