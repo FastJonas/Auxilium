@@ -12,82 +12,77 @@ class Quiz:
         self.setup_ui()
 
     def setup_ui(self):
-        # Configure the window settings
         self.master.configure(bg='#f9f9f9')
         self.master.title('Auxillium')
 
-        # Create a frame to hold the entry page content
         entry_frame = tk.Frame(self.master, bg='#f9f9f9')
         entry_frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER, relwidth=0.6, relheight=0.6)
 
-        # Create a label for the instructions
         instructions_label = tk.Label(entry_frame, text='Welcome to the personality Quiz!\n\nPlease rate the following statements on a scale of 1 to 5, \nwhere 1 is strongly disagree and 5 is strongly agree.\n\nClick Start to begin the quiz.', font=('Arial', 14),
                                       background='#f9f9f9', foreground='#333333')
         instructions_label.pack(pady=40)
 
-        # Create a button to start the quiz
+        # startknapp
         start_button = ttk.Button(entry_frame, text='Start', command=self.start_quiz)
         start_button.pack(pady=0)
 
-        # Create the Auxillium label in the top right corner of the entry frame
+        # Logotyp
         aux_label = tk.Label(entry_frame, text="Auxillium", font=('Arial', 18, 'bold'), bg='#f9f9f9', fg='#555555')
         aux_label.place(relx=0.625, rely=0.85, anchor=tk.NE)
 
     def start_quiz(self):
 
-        # Create a new frame to hold the quiz content
+        # Quizframen
         content_frame = tk.Frame(self.master, bg='#f9f9f9')
         content_frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER, relwidth=0.6, relheight=0.6)
 
-        # Create a label to display the current question
+        # Label för frågor
         self.question_label = ttk.Label(content_frame, text=self.questions[self.current_question], font=('Arial', 16),
                                         background='#f9f9f9', foreground='#333333')
         self.question_label.pack(pady=40)
 
-        # Create a frame to hold the scale and its labels
+        # Frame för scale
         scale_frame = tk.Frame(content_frame, bg='#f9f9f9')
         scale_frame.pack()
 
-        # Create labels for the scale numbers with spacing
+        # Skapar Labels
         for i in range(1, 6):
             label = tk.Label(scale_frame, text=str(i), font=('Arial', 12), bg='#f9f9f9', fg='#555555')
             label.pack(side=tk.LEFT, padx=40)
 
-        # Create a scale to allow the user to select their answer
+        # skapar 1-5 scalen
         self.answer_scale = ttk.Scale(content_frame, from_=1, to=5, orient=tk.HORIZONTAL, length=400, style='TScale')
         self.answer_scale.pack()
 
-        # Create a button to submit the answer and move to the next question
+        # Knappen för submit och nästa
         next_button = ttk.Button(content_frame, text='Next', command=self.next_question)
         next_button.pack(pady=30)
 
     def next_question(self):
-        # Record the answer to the current question
+        # Appendar svaret
         self.answers.append(self.answer_scale.get())
 
-        # Move on to the next question
         self.current_question += 1
 
-        # If there are no more questions, show the results
+        # If sats för vad som händer om frågorna tar slut
         if self.current_question >= len(self.questions):
             self.show_results()
         else:
-            # Update the question label and reset the answer scale
             self.question_label.config(text=self.questions[self.current_question])
             self.answer_scale.set(1)
 
     def show_results(self):
 
-        # Create a new frame to display the quiz results
+        # Frame för resultaten
         results_frame = tk.Frame(self.master, bg='#f9f9f9')
         results_frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER, relwidth=0.6, relheight=0.6)
 
-        # Display the results to the user
+        # Visa resultat
         results_label = ttk.Label(results_frame, text='Quiz Completed!\n\nThank you for taking the quiz.\n\n Your result will be shown in the next page', font=('Arial', 16),
                                   background='#f9f9f9', foreground='#333333', anchor='center', justify='center')
         results_label.pack(pady=40)
 
-        # Create a button to close the application
+        # Stänga applikationen
         close_button = ttk.Button(results_frame, text='Close', command=self.master.destroy)
         close_button.pack(pady=10)
 
