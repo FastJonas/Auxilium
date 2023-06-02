@@ -18,4 +18,4 @@ column_index = 1
 
 df.iloc[:, column_index] = df.iloc[:, column_index].apply(remove_swedish_stopwords)
 
-df.to_excel('250PerTitleWithoutStopwords.xlsx', index=False)
+df.to_excel('Final250PerTitleWithoutStopwords.xlsx', index=False)
