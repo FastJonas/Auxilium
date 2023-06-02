@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the CSV file
-data = pd.read_csv('results.csv', encoding='latin-1')
+data = pd.read_csv('ResultAndScore.csv', encoding='latin-1')
 
 # Get the first column (string column)
 first_column = data.iloc[:, 0]
@@ -25,6 +25,6 @@ for column in data.columns[1:]:
 scaled_data.insert(0, data.columns[0], first_column)
 
 # Save the scaled data to a new CSV file
-scaled_data.to_csv('scaled_resultat.csv', index=False)
+scaled_data.to_csv('ResultAndScore_scaled.csv', index=False)
 
-print("Scaled data saved to scaled_data.csv")
+print("Scaled data saved to ResultAndScore_scaled.csv")
