@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 import csv
 
-df = pd.read_csv('scaled_resultat.csv')
+df = pd.read_csv('resultAndScore_scaled.csv')
 
 ext = 0
 agr = 0
@@ -102,7 +102,7 @@ class Quiz:
 
         # Features and target
         X = df[['Extraversion', 'Medmänsklighet', 'Samvetsgrannhet', 'Emotionell stabilitet', 'Öppenhet för erfarenhet']]
-        y = df['Value']
+        y = df['Job Title']
 
         # Create and fit KNN classifier
         k = 3  # Number of nearest neighbors
@@ -213,5 +213,6 @@ root = tk.Tk()
 root.geometry('800x500')
 quiz = Quiz(root)
 root.mainloop()
+
 
 
