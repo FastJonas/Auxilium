@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 import csv
 
-df = pd.read_csv('resultAndScore_scaled.csv')
+df = pd.read_csv('ResultAndScore_scaled.csv')
 
 ext = 0
 agr = 0
