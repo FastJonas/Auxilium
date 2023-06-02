@@ -1,6 +1,6 @@
 import pandas as pd
 
-input_file = 'resultAndScore_scaled.csv'
+input_file = 'ResultAndScore_scaled.csv'
 
 # Read the CSV file into a pandas DataFrame
 df = pd.read_csv(input_file)
