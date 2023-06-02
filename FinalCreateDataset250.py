@@ -24,7 +24,7 @@ for value in df[job_title_column].unique():
         output_df = pd.concat([output_df, random_rows])
 
 # Skapa en ny Excel-fil
-output_df.to_excel('nya250perTitel1.xlsx', index=False)
+output_df.to_excel('Final250PerTitle.xlsx', index=False)
 
 
 
